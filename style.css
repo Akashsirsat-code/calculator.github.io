@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #211d1d, #3a4452)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.calculator {
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 40px;
+    /* background: transparent; */
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(182, 174, 167, 0.585);
+}
+
+input {
+    width: 320px;
+    margin: 10px;
+    padding: 24px;
+    border: none;
+    background: black;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.643);
+    font-size: 50px;
+    text-align: right;
+    cursor: pointer;
+    border-radius: 16px;
+    color: #ffffff;
+
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+.buttons {
+    border: none;
+
+
+
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+    background: transparent;
+    background-color: black;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 0px 3px 15px rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+
+button:hover {
+    border: 2px solid rgb(254, 254, 254, 0.5)
+}
+
+.equalbtn {
+    background-color: #fb7c14;
+}
+
+.oprator {
+    font-size: 24px;
+    color: #fb7c14;
+}
+
+
+
+footer.copyright {
+    padding: 1rem 0;
+    background: transparent;
+    color: white;
+    text-align: center;
+
+}
+
+footer.copyright a {
+    color: red;
+    text-decoration: none;
+}
+
+
+
+/* .page{
+    height:100vh ;
+     width: 30vw;
+      background:transparent;
+      border-radius:15px ;
+      margin: 10px;
+      padding: 18px;
+    
+     
+    }
+.details{
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 3px 9px rgb(255, 255, 255);
+    padding: 1.3rem;
+    border-radius: 6px;
+}
+.details:last-child{
+    margin-top: 3rem;
+}
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+h4{
+    font-size: 24px;
+    text-align: center;
+}
+p{
+    padding: 8px;
+    text-align: center;
+} */
+
+
+
+
+
+
+
+
+
+
+/* code for ower contant button  */
+
+a {
+    text-decoration: none;
+    color: rgb(193, 193, 193);
+    margin-bottom: 2rem;
+}
+
+
+
+#contactmenu {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    height: 80%;
+    position: fixed;
+    bottom: -1000px;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    transition: all 1s;
+
+
+
+}
+
+.cross {
+    font-size: 22px;
+    width: 10px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.cross:hover {
+    color: red;
+
+}
+
+.close {
+    background: rgba(0, 0, 0, 0.843);
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    color: white;
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.30s;
+
+
+}
+
+.cross:hover .close {
+    opacity: 1;
+}
+
+
+
+
+
+
+.oterstuff {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+.imgdev {
+    width: 80%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+
+
+}
+
+.imgdev h3 {
+    font-size: 22px;
+    font-family: arial;
+    font-weight: 800;
+    color: green;
+}
+
+.imgdev img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    position: relative;
+    top: -40px;
+    transition: all ease-in-out 0.33s;
+
+}
+
+.imgdev img:hover {
+    border-radius: 4px;
+    border: transparent;
+}
+
+
+
+
+
+.othercontant {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+}
+
+.email {
+    color: green;
+}
+
+.devlopar {
+    font-size: 19px;
+    margin-bottom: 4px;
+    font-weight: 500;
+
+}
+
+
+
+
+
+.sociallinks {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+
+.sociallinks a {
+    position: relative;
+
+}
+
+.sociallinks a:hover .tooltips {
+    opacity: 1;
+}
+
+.sociallinks a .tooltips {
+    position: absolute;
+    top: -30px;
+    background-color: rgba(0, 0, 0, 0.899);
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-family: arial;
+    padding: 4px 10px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+
+
+
+
+.about {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1rem;
+
+}
